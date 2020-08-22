@@ -43,10 +43,7 @@ def play(songs)
   
   #input given is a song name/title then to_i would equate to 0
   if song_number_name_input.to_i == 0
-    songs.each do |song|
-      if song == song_number_name_input
-        puts "Playing #{song}"
-      else
+    songs.index("song_number_name_input")
         puts "Invalid input, please try again"
       end
     end
