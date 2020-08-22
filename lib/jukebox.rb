@@ -45,6 +45,7 @@ def play(songs)
   if song_number_name_input.to_i == 0
     song_index = songs.index(song_number_name_input) 
     if song_index != nil
+      #puts "Playing " + song_number_name_input
       puts "Playing " + songs[song_index]
     else
       puts "Invalid input, please try again"
