@@ -49,7 +49,6 @@ def play(songs)
       else
         puts "Invalid input, please try again"
       end
-      break
     end
   #input given is a song number and is not an invalid song number
   elsif song_number_name_input.to_i > 0 && song_number_name_input.to_i <= songs.length
