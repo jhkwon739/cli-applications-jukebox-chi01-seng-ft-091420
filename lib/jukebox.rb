@@ -43,9 +43,11 @@ def play(songs)
   
   #input given is a song name/title then to_i would equate to 0
   if song_number_name_input.to_i == 0
-    songs.index("song_number_name_input")
-        puts "Invalid input, please try again"
-      end
+    song_index = songs.index(song_number_name_input) 
+    if song_index != nil
+      puts "Playing " + song(song_index)
+    else
+      puts "Invalid input, please try again"
     end
   #input given is a song number and is not an invalid song number
   elsif song_number_name_input.to_i > 0 && song_number_name_input.to_i <= songs.length
